@@ -1,2 +1,2 @@
-# primeiroprojeto-es6
-Projeo es6
+# primeiro-projeto-es6
+Projeto es6
