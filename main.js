@@ -1,47 +1,38 @@
+/*
+const : cria variavel do tipo constante.
+Só poderá alerar o vallor definido inicialmente através de mutações
+(objetos e arrays).
+*/ 
 
-class list{
-   constructor(){
 
-    
-    this.data =[];
+let
+const nomevariavel = "João";
 
+const usuario = {nome : "Jesus",idade :26};
+
+usuario.nome = 'Maria';
+
+const meuVetor = [1, 2, 3, 4, 5];
+
+//mutação do array atráves dos indices
+meuVetor[0] = 90;
+meuVetor[2] = 93;
+
+console.log(usuario);
+console.log(meuVetor);
+
+// variável let
+let valor = 3;
+letnome = 'Cláudia Let';
+let alura = 1.86;
+let contemvalor = true;
+
+console.log(user);
+
+// escopo
+var exibemessagem = function(){
+     var mensagem = "Minha Mesagem";
+     console.log(messagem)
 }
-add(value){
-    this.data.push(value);
-    console.log(this.data);
-}
-pop(){
-    this.data.pop();
-    this.print();
 
-}
-print(){
- console.log(this.data);
-}
-}
-
-
-class todoslist extends list{
- print(){
-     console.log("IMprimindo todoslist");
-     super.print();
- }
-}
-
-class Math{
-    static soma(valueA, valueB){
-        return valueA + valueB;
-    }
-}
-
-const minhalista = new todoslist();
-console.log(Math.soma(5,8));
-
-const minhalista2 = new todoslist();
-
-document.getElementById('novotodo').onclick = function(){
-    minhalista.add('Antedigimon');
-}
-document.getElementById('remover').onclick = function(){
-    minhalista.pop();
-}
+exibemessagem();
